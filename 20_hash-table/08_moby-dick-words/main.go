@@ -15,6 +15,7 @@ func main() {
 	}
 
 	scanner := bufio.NewScanner(res.Body)
+	defer res.Body.Close()
 	scanner.Split(bufio.ScanWords)
 
 	for scanner.Scan() {
