@@ -6,9 +6,14 @@ import (
 
 func main() {
 	c := make(chan int)
-	c <- 1
+
+	go func() {
+		c <- 1
+		close(c)
+	}()
+
 	fmt.Println(<-c)
-	
+
 }
 
 // This results in a deadlock.
