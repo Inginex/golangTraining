@@ -5,16 +5,22 @@ import (
 )
 
 func main() {
-	f := factorial(4)
-	fmt.Println("Total:", f)
+	c := fact(4)
+
+	fmt.Println("Total: ", <-c)
 }
 
-func factorial(n int) int {
-	total := 1
-	for i := n; i > 0; i-- {
-		total *= i
-	}
-	return total
+func fact(n int) chan int {
+	var out = make(chan int)
+	sum := 1
+	go func() {
+		for i := 1; i <= n; i++ {
+			sum *= i
+		}
+		out <- sum
+		close(out)
+	}()
+	return out
 }
 
 /*
