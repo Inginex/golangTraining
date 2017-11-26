@@ -46,7 +46,9 @@ func workerProcess(in <-chan string) {
 /*
 CHALLENGE #1
 Is this fan out?
+A: YES, fan out means you have multiple functions reading from the same channel until that channel is closed.
 
 CHALLENGE #2
 Is this fan in?
+A: NO, fan in means you have a function  that can read from multiple inputs and proceed until all are closed by multiplexing the input channels onto a single channel thats closes when all the inputs are closed.
 */
