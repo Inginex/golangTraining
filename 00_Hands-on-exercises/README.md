@@ -1,7 +1,7 @@
 # List of exercises to practice in GO
 ## Exercises - Level 1
 ###### Hands-on exercise #1
-1. Using the short declaration operator, ?ASSIGN? these ?VALUES? to ?VARIABLES? with the IDENTIFIERS “x” and “y” and “z” 
+1. Using the short declaration operator, ASSIGN these VALUES to VARIABLES with the IDENTIFIERS “x” and “y” and “z” 
 a. 42 
 b. “James Bond” 
 c. true 
@@ -28,7 +28,7 @@ a. use fmt.Sprintf to print all of the VALUES to one single string. ASSIGN the r
 b. print out the value stored by variable “s”
 
 ###### Hands-on exercise #4 
- FYI - nice documentation and new terminology “?underlying type?” ? https://golang.org/ref/spec#Types  For this exercise 
+ FYI - nice documentation and new terminology “underlying type” ? https://golang.org/ref/spec#Types  For this exercise 
 1. Create your own type. Have the underlying type be an int. 
 2. create a VARIABLE of your new TYPE with the IDENTIFIER “x” using the “VAR” keyword 
 3. in func main 
@@ -168,7 +168,8 @@ To DELETE from a slice, we use APPEND along with SLICING. For this hands-on exer
 - use APPEND & SLICING to get these values here which you should ASSIGN to a variable “y” and then print: 
   * [42, 43, 44, 48, 49, 50, 51]
 
-###### Hands-on exercise #6 Create a slice to store the names of all of the states in the United States of America. What is the length of your slice? What is the capacity? Print out all of the values, along with their index position in the slice, without using the range clause. Here is a list of the states: 
+###### Hands-on exercise #6 
+Create a slice to store the names of all of the states in the United States of America. What is the length of your slice? What is the capacity? Print out all of the values, along with their index position in the slice, without using the range clause. Here is a list of the states: 
 ```
 ` Alabama`, ` Alaska`, ` Arizona`, ` Arkansas`, ` California`, ` Colorado`, ` Connecticut`, ` Delaware`, ` Florida`, ` Georgia`, ` Hawaii`, ` Idaho`, ` Illinois`, ` Indiana`, ` Iowa`, ` Kansas`, ` Kentucky`, ` Louisiana`, ` Maine`, ` Maryland`, ` Massachusetts`, ` Michigan`, ` Minnesota`, ` Mississippi`, ` Missouri`, ` Montana`, ` Nebraska`, ` Nevada`, ` New Hampshire`, ` New Jersey`, ` New Mexico`, ` New York`, ` North Carolina`, ` North Dakota`, ` Ohio`, ` Oklahoma`, ` Oregon`, ` Pennsylvania`, ` Rhode Island`, ` South Carolina`, ` South Dakota`, ` Tennessee`, ` Texas`, ` Utah`, ` Vermont`, ` Virginia`, ` Washington`, ` West Virginia`, ` Wisconsin`, ` Wyoming`,  
 ```
