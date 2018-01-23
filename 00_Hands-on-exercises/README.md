@@ -65,7 +65,15 @@ i. now use CONVERSION to convert the TYPE of the VALUE stored in “x” to the UNDE
 1. Write a program that prints a number in decimal, binary, and hex.
 
 ###### Hands-on exercise #2
-1. Using the following operators, write expressions and assign their values to variables: g. == h. <= i. >= j. != k. < l. > 
+1. Using the following operators, write expressions and assign their values to variables:
+``` 
+g. == 
+h. <= 
+i. >= 
+j. != 
+k. < 
+l. > 
+``` 
 Now print each of the variables.
 
 ###### Hands-on exercise #3
@@ -194,3 +202,37 @@ Using the code from the previous example, add a record to your map. Now print th
 Using the code from the previous example, delete a record from your map. Now print the map out using the “range” loop.
 
 **code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%234_Level4).
+
+
+## Exercises - Level 5
+###### Hands-on exercise #1
+Create your own type “person” which will have an underlying type of “struct” so that it can store the following data: 
+- first name 
+- last name 
+- favorite ice cream flavors 
+Create two VALUES of TYPE person. Print out the values, ranging over the elements in the slice which stores the favorite flavors.
+
+###### Hands-on exercise #2 
+Take the code from the previous exercise, then store the values of type person in a map with the key of last name. Access each value in the map. Print out the values, ranging over the slice.
+
+###### Hands-on exercise #3 
+Create a new type: vehicle.  
+- The underlying type is a struct.  
+- The fields:  
+  * doors 
+  * color  
+- Create two new types: truck & sedan.
+  * The underlying type of each of these new types is a struct.  
+  * Embed the “vehicle” type in both truck & sedan.  
+  * Give truck the field “fourWheel” which will be set to bool.  
+  * Give sedan the field “luxury” which will be set to bool. solution  
+- Using the vehicle, truck, and sedan structs:  
+  * using a composite literal, create a value of type truck and assign values to the fields; 
+  * using a composite literal, create a value of type sedan and assign values to the fields.  
+- Print out each of these values. 
+- Print out a single field from each of these values. 
+
+###### Hands-on exercise #4 
+Create and use an anonymous struct.
+
+**code solution:** [Here]().
