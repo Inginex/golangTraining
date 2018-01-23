@@ -235,4 +235,4 @@ Create a new type: vehicle.
 ###### Hands-on exercise #4 
 Create and use an anonymous struct.
 
-**code solution:** [Here]().
+**code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%235_Level5).
