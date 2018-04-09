@@ -1,9 +1,9 @@
 # List of exercises to practice in GO
 ## Exercises - Level 1
 ###### Hands-on exercise #1
-1. Using the short declaration operator, ASSIGN these VALUES to VARIABLES with the IDENTIFIERS “x” and “y” and “z” 
+1. Using the short declaration operator, ASSIGN these VALUES to VARIABLES with the IDENTIFIERS ï¿½xï¿½ and ï¿½yï¿½ and ï¿½zï¿½ 
 a. 42 
-b. “James Bond” 
+b. ï¿½James Bondï¿½ 
 c. true 
 2. Now print the values stored in those variables using  
 a. a single print statement 
@@ -11,9 +11,9 @@ b. multiple print statements
 
 ###### Hands-on exercise #2 
 1. Use var to DECLARE three VARIABLES. The variables should have package level scope. Do not assign VALUES to the variables. Use the following IDENTIFIERS for the variables and make sure the variables are of the following TYPE (meaning they can store VALUES of that TYPE). 
-a. identifier “x” type int 
-b. identifier “y” type string 
-c. identifier “z” type bool 
+a. identifier ï¿½xï¿½ type int 
+b. identifier ï¿½yï¿½ type string 
+c. identifier ï¿½zï¿½ type bool 
 2. in func main 
 a. print out the values for each identifier 
 b. The compiler assigned values to the variables. What are these values called? 
@@ -21,25 +21,25 @@ b. The compiler assigned values to the variables. What are these values called?
 ###### Hands-on exercise #3 
 Using the code from the previous exercise, 
 1. At the package level scope, assign the following values to the three variables a. for x assign 42 
-b. for y assign “James Bond” 
+b. for y assign ï¿½James Bondï¿½ 
 c. for z assign true 
 2. in func main 
-a. use fmt.Sprintf to print all of the VALUES to one single string. ASSIGN the returned value of TYPE string using the short declaration operator to a VARIABLE with the IDENTIFIER “s” 
-b. print out the value stored by variable “s”
+a. use fmt.Sprintf to print all of the VALUES to one single string. ASSIGN the returned value of TYPE string using the short declaration operator to a VARIABLE with the IDENTIFIER ï¿½sï¿½ 
+b. print out the value stored by variable ï¿½sï¿½
 
 ###### Hands-on exercise #4 
- FYI - nice documentation and new terminology “underlying type” ? https://golang.org/ref/spec#Types  For this exercise 
+ FYI - nice documentation and new terminology ï¿½underlying typeï¿½ ? https://golang.org/ref/spec#Types  For this exercise 
 1. Create your own type. Have the underlying type be an int. 
-2. create a VARIABLE of your new TYPE with the IDENTIFIER “x” using the “VAR” keyword 
+2. create a VARIABLE of your new TYPE with the IDENTIFIER ï¿½xï¿½ using the ï¿½VARï¿½ keyword 
 3. in func main 
-a. print out the value of the variable “x” 
-b. print out the type of the variable “x” 
-c. assign 42 to the VARIABLE “x” using the “=” OPERATOR 
-d. print out the value of the variable “x” 
+a. print out the value of the variable ï¿½xï¿½ 
+b. print out the type of the variable ï¿½xï¿½ 
+c. assign 42 to the VARIABLE ï¿½xï¿½ using the ï¿½=ï¿½ OPERATOR 
+d. print out the value of the variable ï¿½xï¿½ 
 
 ###### Hands-on exercise #5 
 Building on the code from the previous example 
-1. at the package level scope, using the “var” keyword, create a VARIABLE with the IDENTIFIER “y”. The variable should be of the UNDERLYING TYPE of your custom TYPE “x” 
+1. at the package level scope, using the ï¿½varï¿½ keyword, create a VARIABLE with the IDENTIFIER ï¿½yï¿½. The variable should be of the UNDERLYING TYPE of your custom TYPE ï¿½xï¿½ 
 a. eg:
 ```
 type hotdog int
@@ -48,14 +48,14 @@ var y hotdog
 ```
 2. in func main 
 a. this should already be done 
-i. print out the value of the variable “x” 
-ii. print out the type of the variable “x” 
-iii. assign your own VALUE to the VARIABLE “x” using the “=” OPERATOR 
-iv. print out the value of the variable “x” 
+i. print out the value of the variable ï¿½xï¿½ 
+ii. print out the type of the variable ï¿½xï¿½ 
+iii. assign your own VALUE to the VARIABLE ï¿½xï¿½ using the ï¿½=ï¿½ OPERATOR 
+iv. print out the value of the variable ï¿½xï¿½ 
 b. now do this 
-i. now use CONVERSION to convert the TYPE of the VALUE stored in “x” to the UNDERLYING TYPE 
-1. then use the “=” operator to ASSIGN that value to “y” 
-2. print out the value stored in “y” 3. print out the type of “y” 
+i. now use CONVERSION to convert the TYPE of the VALUE stored in ï¿½xï¿½ to the UNDERLYING TYPE 
+1. then use the ï¿½=ï¿½ operator to ASSIGN that value to ï¿½yï¿½ 
+2. print out the value stored in ï¿½yï¿½ 3. print out the type of ï¿½yï¿½ 
 
 **code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%231_Level1).
 
@@ -103,7 +103,7 @@ U+0041 'A' U+0041 'A' U+0041 'A'
 66 
 U+0042 'B' U+0042 'B' U+0042 'B'  
 ``` 
-… through the rest of the alphabet characters.
+ï¿½ through the rest of the alphabet characters.
 
 ###### Hands-on exercise #3 
 Create a for loop using this syntax for condition { } Have it print out the years you have been alive. 
@@ -115,16 +115,16 @@ Create a for loop using this syntax  for { } Have it print out the years you hav
 Print out the remainder (modulus) which is found for each number between 10 and 100 when it is divided by 4.
 
 ###### Hands-on exercise #6 
-Create a program that shows the “if statement” in action. 
+Create a program that shows the ï¿½if statementï¿½ in action. 
 
 ###### Hands-on exercise #7 
-Building on the previous hands-on exercise, create a program that uses “else if” and “else”. 
+Building on the previous hands-on exercise, create a program that uses ï¿½else ifï¿½ and ï¿½elseï¿½. 
 
 ###### Hands-on exercise #8 
 Create a program that uses a switch statement with no switch expression specified.
 
 ###### Hands-on exercise #9 
-Create a program that uses a switch statement with the switch expression specified as a variable of TYPE string with the IDENTIFIER “favSport”.
+Create a program that uses a switch statement with the switch expression specified as a variable of TYPE string with the IDENTIFIER ï¿½favSportï¿½.
 
 ###### Hands-on exercise #10 
 Write down what these print: 
@@ -173,7 +173,7 @@ Follow these steps:
 To DELETE from a slice, we use APPEND along with SLICING. For this hands-on exercise, follow these steps:
 - start with this slice 
   * x := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51} 
-- use APPEND & SLICING to get these values here which you should ASSIGN to a variable “y” and then print: 
+- use APPEND & SLICING to get these values here which you should ASSIGN to a variable ï¿½yï¿½ and then print: 
   * [42, 43, 44, 48, 49, 50, 51]
 
 ###### Hands-on exercise #6 
@@ -190,23 +190,23 @@ Create a slice of a slice of string ([][]string). Store the following data in th
 Range over the records, then range over the data in each record.
 
 ###### Hands-on exercise #8 
-Create a map with a key of TYPE string which is a person’s “last_first” name, and a value of TYPE []string which stores their favorite things. Store three records in your map. Print out all of the values, along with their index position in the slice. 
+Create a map with a key of TYPE string which is a personï¿½s ï¿½last_firstï¿½ name, and a value of TYPE []string which stores their favorite things. Store three records in your map. Print out all of the values, along with their index position in the slice. 
 ```
 `bond_james`, `Shaken, not stirred`, `Martinis`, `Women` `moneypenny_miss`, `James Bond`, `Literature`, `Computer Science` `no_dr`, `Being evil`, `Ice cream`, `Sunsets` 
 ```
 
 ###### Hands-on exercise #9 
-Using the code from the previous example, add a record to your map. Now print the map out using the “range” loop.
+Using the code from the previous example, add a record to your map. Now print the map out using the ï¿½rangeï¿½ loop.
 
 ###### Hands-on exercise #10 
-Using the code from the previous example, delete a record from your map. Now print the map out using the “range” loop.
+Using the code from the previous example, delete a record from your map. Now print the map out using the ï¿½rangeï¿½ loop.
 
 **code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%234_Level4).
 
 
 ## Exercises - Level 5
 ###### Hands-on exercise #1
-Create your own type “person” which will have an underlying type of “struct” so that it can store the following data: 
+Create your own type ï¿½personï¿½ which will have an underlying type of ï¿½structï¿½ so that it can store the following data: 
 - first name 
 - last name 
 - favorite ice cream flavors 
@@ -223,9 +223,9 @@ Create a new type: vehicle.
   * color  
 - Create two new types: truck & sedan.
   * The underlying type of each of these new types is a struct.  
-  * Embed the “vehicle” type in both truck & sedan.  
-  * Give truck the field “fourWheel” which will be set to bool.  
-  * Give sedan the field “luxury” which will be set to bool. solution  
+  * Embed the ï¿½vehicleï¿½ type in both truck & sedan.  
+  * Give truck the field ï¿½fourWheelï¿½ which will be set to bool.  
+  * Give sedan the field ï¿½luxuryï¿½ which will be set to bool. solution  
 - Using the vehicle, truck, and sedan structs:  
   * using a composite literal, create a value of type truck and assign values to the fields; 
   * using a composite literal, create a value of type sedan and assign values to the fields.  
@@ -236,3 +236,69 @@ Create a new type: vehicle.
 Create and use an anonymous struct.
 
 **code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%235_Level5).
+
+## Exercises - Level 5
+###### Hands-on exercise #1
+- create a func with the identifier foo that returns an int
+- create a func with the identifier bar that returns an int and a string
+- call both funcs
+- print out their results
+
+###### Hands-on exercise #2
+- create a func with the identifier foo that 
+* takes in a variadic parameter of type int
+* pass in a value of type []int into your func (unfurl the []int)
+* returns the sum of all values of type int passed in
+- create a func with the identifier bar that 
+* takes in a parameter of type []int
+* returns the sum of all values of type int passed in
+
+
+###### Hands-on exercise #3
+- Use the ï¿½deferï¿½ keyword to show that a deferred func runs after the func containing it exits.
+
+###### Hands-on exercise #4
+- Create a user defined struct with 
+* the identifier â€œpersonâ€
+* the fields:
+  * first
+  * last
+  * age
+* attach a method to type person with
+* the identifier â€œspeakâ€
+* the method should have the person say their name and age
+- create a value of type person
+* call the method from the value of type person
+
+###### Hands-on exercise #5
+- create a type SQUARE
+- create a type CIRCLE
+- attach a method to each that calculates AREA and returns it
+  * circle area= Ï€ r 2
+  * square area = L * W
+- create a type SHAPE that defines an interface as anything that has the AREA method
+- create a func INFO which takes type shape and then prints the area
+- create a value of type square
+- create a value of type circle
+- use func info to print the area of square
+- use func info to print the area of circle
+
+###### Hands-on exercise #6
+- Build and use an anonymous func 
+
+###### Hands-on exercise #7
+- Assign a func to a variable, then call that func
+
+###### Hands-on exercise #8
+- Create a func which returns a func
+- assign the returned func to a variable
+- call the returned func
+
+###### Hands-on exercise #9
+- A â€œcallbackâ€ is when we pass a func into a func as an argument. For this exercise, 
+* pass a func into a func as an argument 
+
+###### Hands-on exercise #10
+- Closure is when we have â€œenclosedâ€ the scope of a variable in some code block. For this hands-on exercise, create a func which â€œenclosesâ€ the scope of a variable:
+
+**code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%236_Level6).
