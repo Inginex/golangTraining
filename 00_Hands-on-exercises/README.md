@@ -237,7 +237,7 @@ Create and use an anonymous struct.
 
 **code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%235_Level5).
 
-## Exercises - Level 5
+## Exercises - Level 6
 ###### Hands-on exercise #1
 - create a func with the identifier foo that returns an int
 - create a func with the identifier bar that returns an int and a string
@@ -302,3 +302,26 @@ Create and use an anonymous struct.
 - Closure is when we have “enclosed” the scope of a variable in some code block. For this hands-on exercise, create a func which “encloses” the scope of a variable:
 
 **code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%236_Level6).
+
+## Exercises - Level 7
+###### Hands-on exercise #1
+- Create a value and assign it to a variable. 
+- Print the address of that value.
+
+###### Hands-on exercise #2
+- create a person struct
+- create a func called “changeMe” with a *person as a parameter
+  - change the value stored at the *person address
+    * important
+      * to dereference a struct, use (*value).field 
+        * p1.first
+        * (*p1).first
+      * “As an exception, if the type of x is a named pointer type and (*x).f is a valid selector expression denoting a field (but not a method), x.f is shorthand for (*x).f.”
+- create a value of type person
+  * print out the value
+- in func main
+  * call “changeMe”
+- in func main
+  * print out the value
+      
+**code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%237_Level7).
