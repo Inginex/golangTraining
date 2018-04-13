@@ -325,3 +325,25 @@ Create and use an anonymous struct.
   * print out the value
       
 **code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%237_Level7).
+
+## Exercises - Level 8
+###### Hands-on exercise #1
+- Marshal the []user to JSON. There is a little bit of a curve ball in this hands-on exercise - remember to ask yourself what you need to do to EXPORT a value from a package.
+
+###### Hands-on exercise #2
+- Unmarshal the JSON into a Go data structure.
+
+###### Hands-on exercise #3
+- Encode to JSON the []user sending the results to Stdout. Hint: you will need to use json.NewEncoder(os.Stdout).encode(v interface{})
+
+###### Hands-on exercise #4
+- Sort the []int and []string for each person.
+
+###### Hands-on exercise #5
+- Sort the []user by 
+  * age
+  * last
+- Also sort each []string “Sayings” for each user
+  * print everything in a way that is pleasant
+
+**code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%238_Level8).
