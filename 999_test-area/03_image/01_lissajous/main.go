@@ -12,21 +12,20 @@ import (
 	"time"
 )
 
-var pallete = []color.Color{color.White, color.Black}
+var pallete = []color.Color{color.White, color.Black, color.RGBA{54, 236, 12, 1}, color.RGBA{12, 39, 136, 1}, color.RGBA{136, 12, 12, 1}, color.RGBA{136, 12, 132, 1}}
 
 const (
-	whiteIndex = 0
-	blackIndex = 1
+	white  = 0
+	black  = 1
+	green  = 2
+	blue   = 3
+	red    = 4
+	purple = 5
 )
 
 func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
-	file, err := os.Create("lissajous.gif")
-	if err != nil {
-		log.Fatalf("ERRRRRRRRRRRRRRRRRR: %v", err)
-		return
-	}
-	lissajous(file)
+	lissajous(os.Stdout) // ./main.go >out01.gif
 }
 
 func lissajous(out io.Writer) {
@@ -47,7 +46,8 @@ func lissajous(out io.Writer) {
 		for t := 0.0; t < cycles*2*math.Pi; t += res {
 			x := math.Sin(t)
 			y := math.Sin(t*freq + phase)
-			img.SetColorIndex(size+int(x*size+0.5), size+int(y*size+0.5), blackIndex)
+			cl := uint8(rand.Intn(2) + 2)
+			img.SetColorIndex(size+int(x*size+0.5), size+int(y*size+0.5), cl)
 		}
 		phase += 0.1
 		anim.Delay = append(anim.Delay, delay)

@@ -1,0 +1,6 @@
+Fetched in 1.71s, url: https://www.youtube.com, StatusCode: 200 OK
+Fetched in 0.63s, url: https://www.facebook.com, StatusCode: 200 OK
+Fetched in 0.37s, url: https://www.google.com, StatusCode: 200 OK
+Fetched in 0.79s, url: https://www.uilia.com.br, StatusCode: 200 OK
+Fetched in 0.66s, url: http://store.steampowered.com, StatusCode: 200 OK
+Fetched in 0.86s, url: https://www.linkedin.com/feed/, StatusCode: 200 OK
