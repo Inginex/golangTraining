@@ -347,3 +347,57 @@ Create and use an anonymous struct.
   * print everything in a way that is pleasant
 
 **code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%238_Level8).
+
+## Exercises - Level 9
+###### Hands-on exercise # 1
+- In addition to the main goroutine, launch two additional goroutines
+each additional goroutine should print something out
+- Use waitgroups to make sure each goroutine finishes before your program exists
+
+###### Hands-on exercise # 2
+- This exercise will reinforce our understanding of method sets:
+  * Create a type person struct 
+  * Attach a method speak to type person using a pointer receiver
+    * Type *person
+  * Create a type human interface
+    * To implicitly implement the interface, a human must have the speak method
+  * Create a func "saySomething"
+    * Have it take in a human parameter
+    * Have it call the speak method
+  * Show the following in your code
+    * You can pass a value of type pointer to a person (*person) into saySomething
+    * You cannot pass a value of type person into saySomething
+
+| Receivers |  Values  |
+| --------- |  ------  |
+|   (t T)   | T and *T |
+|   (t *T)  |   *T     |
+
+###### Hands-on exercise # 3
+- Using goroutines, create an incrementer program
+  * Have a variable to hold the incrementer value
+  * Launch a bunch of gorountines
+    * Each goroutine should:
+      * Read the incrementer value
+        * And store it in a new variable
+      * Yield the processor with runtime.Gosched()
+      * Increment the new variable
+      * Write the value in the new variable back to incrementer variable
+- Use WaitGroups to wait for all of your goroutines to finish
+- The above will create a race condition
+- Prove that it is a race condition by using the "-race flag"
+
+###### Hands-on exercise # 4
+- Fix the race condition you created in the previous exercise by using a mutex
+  * It makes sense to remove runtime.Gosched()
+
+###### Hands-on exercise # 5
+- Fix race condition you created in exercise #4 by using package atomic
+
+###### Hands-on exercise # 6
+- Create a program that print out your OS and ARCH. Use following commands to run it
+  * go run
+  * go build
+  * go install
+
+**code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%239_Level9).
