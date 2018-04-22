@@ -401,3 +401,34 @@ each additional goroutine should print something out
   * go install
 
 **code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%239_Level9).
+
+## Exercises - Level 10
+###### Hands-on exercise # 1
+- using func literal, aka, anonymous self-executing func
+- a buffered channel
+
+###### Hands-on exercise # 2
+- Get this code running:
+  * https://play.golang.org/p/oB-p3KMiH6 
+
+###### Hands-on exercise # 3
+- Starting with [this code](https://play.golang.org/p/sfyu4Is3FG), pull the values off the channel using a for range loop
+
+###### Hands-on exercise # 4
+- Starting with [this code](https://play.golang.org/p/MvL6uamrJP), pull the values off the channel using a select statement
+
+###### Hands-on exercise # 5
+- Show the comma ok idiom starting with [this code](https://play.golang.org/p/YHOMV9NYKK).
+
+###### Hands-on exercise # 6
+- write a program that
+  * puts 100 numbers to a channel
+  * pull the numbers off the channel and print them
+
+###### Hands-on exercise # 7
+- write a program that
+  * launches 10 goroutines
+    * each goroutine adds 10 numbers to a channel
+  * pull the numbers off the channel and print them
+
+**code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%240_Level10).
