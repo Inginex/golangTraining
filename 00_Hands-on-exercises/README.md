@@ -431,4 +431,21 @@ each additional goroutine should print something out
     * each goroutine adds 10 numbers to a channel
   * pull the numbers off the channel and print them
 
-**code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%240_Level10).
+**code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%2310_Level10).
+
+## Exercises - Level 11
+###### Hands-on exercise # 1
+- Start with [this code](https://play.golang.org/p/3W69TH4nON). Instead of using the blank identifier, make sure the code is checking and handling the error.
+
+###### Hands-on exercise # 2
+- Start with [this code](https://play.golang.org/p/9a1IAWy5E6). Create a custom error message using “fmt.Errorf”.
+
+###### Hands-on exercise # 3
+- Create a struct “customErr” which implements the builtin.error interface.  Create a func “foo” that has a value of type error as a parameter. Create a value of type “customErr” and pass it into “foo”. 
+
+###### Hands-on exercise # 4
+- Starting with this code, use the sqrt.Error struct as a value of type error. If you would like, use these numbers for your 
+  * lat "50.2289 N"
+  * long "99.4656 W"
+
+**code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%2311_Level11).
