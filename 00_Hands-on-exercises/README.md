@@ -449,3 +449,9 @@ each additional goroutine should print something out
   * long "99.4656 W"
 
 **code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%2311_Level11).
+
+## Exercises - Level 12
+###### Hands-on exercise # 1
+- Create a dog package. The dog package should have an exported func “Years” which takes human years and turns them into dog years (1 human year = 7 dog years). Document  your code with comments. Use this code in func main. 
+
+**code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%2312_Level11).
