@@ -455,3 +455,12 @@ each additional goroutine should print something out
 - Create a dog package. The dog package should have an exported func “Years” which takes human years and turns them into dog years (1 human year = 7 dog years). Document  your code with comments. Use this code in func main. 
 
 **code solution:** [Here](https://github.com/Inginex/golangTraining/tree/master/00_Hands-on-exercises/%2312_Level11).
+
+## Exercises - Level 13
+###### Hands-on exercise # 1
+- Start with this code. Get the code ready to BET on the code (add benchmarks, examples, tests). Run the following in this order:
+  * tests
+  * benchmarks
+  * coverage
+  * coverage shown in web browser
+  * examples shown in documentation in a web browser
